@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: none;
+
+}
+
+main{
+    width: 1000px;
+    margin: auto;
+    background-color: rgb(11, 1, 12);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#landing_page{
+    height: 500px;
+    background-image: url("/asserts/img/landing_page2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.heading{
+    height: inherit;
+    background-color: rgba(0, 0, 0,0.6);
+}
+
+#logo {
+    position: absolute;
+    color:rgba(0, 194, 253, 0.6);
+    margin-left: 1rem;
+    font-weight: 100;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#logo h1 {
+    position: fixed ;
+}
+
+#logo h1:hover {
+    cursor: pointer;
+}
+
+#nav {  
+    width: auto;
+    background-color: rgba(0, 0, 0 0.65);
+    padding-left: 42rem;
+    height: 40px;
+
+}
+
+ul {
+    position: fixed ;
+    padding-top: 0.5em;
+
+}
+
+ul a {
+    text-decoration: none;
+    color: aqua;
+    font-size: 20px;
+    margin-left: 0.2em;
+    letter-spacing: 0.02em;
+    transition: all 0.6s ease-in;
+    
+}
+
+ul a:hover{
+    color:white;
+    border-bottom: 1px solid rgba(0, 194, 253, 0.6);
+    letter-spacing: 0em;
+}
+
+ul a:active {
+    border-bottom: 1px solid rgba(253, 0, 0, 0.6);
+}
+
+/* =============================================================================================
+
+HEAADING DESIGN
+================================================================================================ */
+
+#landing_page #head {
+    margin-top: 15%;
+    margin-left: 14%;
+    color: red;
+}
+
+#head h1{
+    color: white;
+    font-size: 57px;
+    font-weight: 100;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 0.3em;
+    margin-bottom: 0.2em;
+    border-left: 2.8px dotted aqua;
+    transition: all 0.5s ease-in-out;
+}
+
+#head h1:hover {
+    filter: blur(0.8px);
+}
+
+#head p {
+    color:aqua;
+    margin-left:0.3em ;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    font-size:18px;
+    line-height: 0.3em;
+}
+
+.nav{
+    margin-top: 6rem;
+    margin-left: 0.5rem;
+}
+
+.nav button {
+    color: wheat;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    z-index: 1;
+    margin-left: 2rem;
+    padding: 0.4rem;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+
+}
+.nav button{
+    border: 1px solid white;
+    transition: all 1s ease-in-out;
+}
+.nav button:hover{
+    cursor: pointer;
+    /* transform: translateY(360); */
+    border: none;
+    border-bottom: 2px solid rgba(0, 194, 253, 0.6);
+}
+/* ===============================
+ICONS DESIGN
+=================================== */
+
+.view_more {
+    /* margin-left: 30rem; */
+    text-align: center;
+    color: aqua;
+    width: 20%;
+    margin: auto;
+    cursor: pointer;
+}
+#links a{
+    position: aboslute;
+    text-align: right;
+    margin-top: -1rem;
+    margin-left: 60rem;
+}
+#links a{
+    color:rgba(253, 0, 0, 0.6)
+}
+
+
+.view_more h1{
+    animation: view_more 2s infinite forwards;
+}
+
+@keyframes view_more {
+    0%{margin-top: -2rem; opacity: 0;}
+    100%{margin-top: 1rem;opacity: 1;}
+
+    
+}
+/* =============================================================================
+ABOUT ME SECTION
+================================================================================ */
+
+#about{
+    height: 500px;
+}
