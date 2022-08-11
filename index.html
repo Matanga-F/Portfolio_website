@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/styling.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
+    <link rel="stylesheet" href ="./css/mobile_view.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>PortFolio</title>
 </head>
@@ -28,7 +29,7 @@
                     
                     
                 <div id="head">
-                    <h1>Web Developer</h1>
+                    <h1><span class="auto_type"></span></h1>
                     <p>Clean Efficient Code Development and Deployment</p>
                 </div>
 
@@ -57,5 +58,16 @@
 
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+       var typed = new Typed(".auto_type", {
+        strings: ["Web Developer", "Fulufhelo Matanga"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true
+       })
+
+    </script>
+    <script src="/js/index.js"></script>
 </body>
 </html>
