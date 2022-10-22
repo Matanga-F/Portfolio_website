@@ -4,73 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="./css/styling.css" rel="stylesheet" type="text/css" /> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
-    <link rel="stylesheet" href ="./css/mobile_view.css" type="text/css" />
+    <link href="/css/mobile_view.css" type="text/css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>PortFolio</title>
+    <script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
+    <title>Fulufhelo Matanga</title>
 </head>
 <body>
     <main>
-        <div id="landing_page">
-            <div class="heading">
-                <div id="logo">
-                    <h1>Vilcorn</h1>
-                </div>
-                <section class="navigation">
-                    <div id="nav" >
-                        <a href="javascript:void(0)" class="closebtn" id="close">&times;</a>
-                        <a href="">About</a>
-                        <a href="">Skills</a>
-                        <a href="">Projects</a>
-                        <a href="">Resume</a>
-                        <a href="">Contact</a>
-                    </div>
-                </section>
-                    
-                
-
-                <span class="openbtn" id="open">&#9776;</span>
-                    
-                    
+        <section class="heading">
+            <div class="head">
                 <div id="head">
-                    <h1><span class="auto_type">Fulufhelo Matanga</span></h1>
-                    <h3>Full Stack Developer</h3>
-                    <p>Clean Efficient Code Development and Deployment.</p>
+                    <div class="logo">
+                        <h1>V</h1>
+                    </div>
+                    <div class="nav" id="navigation">
+                        <a href="#">About</a>
+                        <a href="#">Skills</a>
+                        <a href="#">Projects</a>
+                        <a href="#">Contact</a>
+                    </div>
                 </div>
-                <!-- <div class="view_more">
-                    <h1><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h1>
-                </div> -->
                 
+                <div class="name">
+                    <h1>Fulufhelo Matanga</h1>
+                    <h4>Full Stack Developer.</h4>
+                    <p>Write clean effient code and software Development.</p>
+                    
+                </div>
+                <div >
+                    <button class="resume">Resume</button>
+                    <button class="resume">View Project</button>
+                    <button class="resume">Send Email</button>
+                </div>
+                <div id="resume"></div>
             </div>
-        </div>
-
-        <!-- ABOUT SECTION -->
-        <div id="about">
-            <div class="about">
-                <h1>About Me</h1>
-                <p>I am self driven individual who is passionate in software development,
-                     I thrive off problem-solving through programming. I enjoy being challenged
-                      and working on projects which require me to
-                     work outside my skill and knowledge set to acquire new concepts.</p>
-                     <p>I have experience in various programming languages such as
-                         JavaScript, Java, Python and simple web based languages as
-                          HTML5, CSS3 and it's libraries. and also I have few personal
-                           projects in using frameworks such as React and Django.</p>
+        </section>
+        <section class="about">
+            <div class="grid_view">
+                <div id="about_me">
+                    <h5>About Me</h5>
+                </div>
+                <div id="about_me">
+                    <p>I am self driven individual who is passionate
+                         in software development , I thrive off problem-solving
+                          through programming. I enjoy being challenged and working
+                           on projects which require me to work outside my skill and
+                            knowledge set to acquire new concepts.</p>
+                    <p>I have experience in various programming languages such as
+                         JavaScript, Java, Python and simple web based languages as HTML5,
+                          CSS3 and it's libraries. and also I have few personal projects in 
+                          using frameworks such as React and Django.
+                    </p>
+                </div>
             </div>
+        </section>
+        <section class="skills">
+            <h1>What I Do</h1>
+            <div>
+                <h2>Skills</h2>
+                <div class="grid_skills">
+                    <div id="skill">
+                        <i class="fa-brands fa-react"></i>
+                        <h4>React Js</h4>
+                        <button id="credentials">show Credentials</button>
+                    </div>
+                    <div id="skill">
+                        <h4>React</h4>
+                        <button id="credentials">show Credentials</button>
+                    </div>
+                    <div id="skill">
+                        <h4>React</h4>
+                        <button id="credentials">show Credentials</button>
+                    </div>
+                    <div id="skill">
+                        <h4>React</h4>
+                        <button id="credentials">show Credentials</button>
+                    </div>
+                    <div id="skill">
+                        <h4>React</h4>
+                        <button id="credentials">show Credentials</button>
+                    </div>
+                    <div id="skill">
+                        <h4>React</h4>
+                        <button id="credentials">show Credentials</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="">
+                <div>project 1</div>
+                <div>project 2</div>
+                <div>project 3</div>
+                <div>project 4</div>
+                <div>project 5</div>
+                <div>project 6</div>
+            </div>
+        </section>
 
-        </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!-- <script>
-       var typed = new Typed(".auto_type", {
-        strings: ["Full Stack Developer", "Fulufhelo Matanga"],
-        typeSpeed: 50,
-        backSpeed: 50,
-        loop: true
-       })
-
-    </script> -->
-    <script src="/js/index.js"></script>
+    
 </body>
 </html>
