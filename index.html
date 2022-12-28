@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/mobile_view.css" type="text/css" rel="stylesheet" />
-
+    <link href="./css/mobile_view.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
     <title>Fulufhelo Matanga</title>
@@ -18,24 +17,33 @@
                     <div class="logo">
                         <h1>V</h1>
                     </div>
+                    <!-- Button to close the overlay navigation -->
                     <div class="nav" id="navigation">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a href="#">About</a>
                         <a href="#">Skills</a>
                         <a href="#">Projects</a>
                         <a href="#">Contact</a>
                     </div>
+                    <button class="open_menu" id="open_menu">open</button>
+                </div>
+                <div class="menu_nav">
+                    <span class = "dot"></span>
+                    <span class = "dot"></span>
+                    <span class = "dot"></span>
+                    <span class = "dot"></span>
                 </div>
                 
                 <div class="name">
                     <h1>Fulufhelo Matanga</h1>
-                    <h4>Full Stack Developer.</h4>
-                    <p>Write clean effient code and software Development.</p>
+                    <h4>Aspiring Full Stack Developer</h4>
+                    <p>Clean efficient code and software development.</p>
                     
                 </div>
                 <div >
-                    <button class="resume">Resume</button>
-                    <button class="resume">View Project</button>
-                    <button class="resume">Send Email</button>
+                    <button class="resume" href="resume">Resume</button>
+                    <button class="resume" href="projects">View Project</button>
+                    <button class="resume" href="email">Send Email</button>
                 </div>
                 <div id="resume"></div>
             </div>
@@ -47,7 +55,7 @@
                 </div>
                 <div id="about_me">
                     <p>I am self driven individual who is passionate
-                         in software development , I thrive off problem-solving
+                         in software development, I thrive off problem-solving
                           through programming. I enjoy being challenged and working
                            on projects which require me to work outside my skill and
                             knowledge set to acquire new concepts.</p>
@@ -57,42 +65,47 @@
                           using frameworks such as React and Django.
                     </p>
                 </div>
-            </div>
-        </section>
-        <section class="skills">
-            <h1>What I Do</h1>
-            <div>
-                <h2>Skills</h2>
-                <div class="grid_skills">
-                    <div id="skill">
-                        <i class="fa-brands fa-react"></i>
-                        <h4>React Js</h4>
-                        <button id="credentials">show Credentials</button>
-                    </div>
-                    <div id="skill">
-                        <h4>React</h4>
-                        <button id="credentials">show Credentials</button>
-                    </div>
-                    <div id="skill">
-                        <h4>React</h4>
-                        <button id="credentials">show Credentials</button>
-                    </div>
-                    <div id="skill">
-                        <h4>React</h4>
-                        <button id="credentials">show Credentials</button>
-                    </div>
-                    <div id="skill">
-                        <h4>React</h4>
-                        <button id="credentials">show Credentials</button>
-                    </div>
-                    <div id="skill">
-                        <h4>React</h4>
-                        <button id="credentials">show Credentials</button>
-                    </div>
+                <div class="icon">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="skills">
+            <div class="skill">
+                <h2>Skills</h2>
+                <div class="grid_skills">
+                    <div class="item">
+                        <h6>Java</h6>
+                        <button>show Credentials</button>
+                    </div>
+                    <div>
+                        <h6>JavaScript</h6>
+                        <button>show Credentials</button>
+                    </div>
+                    <div>
+                        <h6>C-sharp (C#)</h6>
+                        <button>show Credentials</button>
+                    </div>
+                    <div>
+                        <h6>Python</h6>
+                        <button>show Credentials</button>
+                    </div>
+                    <div>
+                        <h6>SQL</h6>
+                        <button>show Credentials</button>
+                    </div>
+                    <div>
+                        <h6>Web Dev</h6>
+                        <button>show Credentials</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="project">
             <div class="">
                 <div>project 1</div>
                 <div>project 2</div>
@@ -106,4 +119,5 @@
     </main>
     
 </body>
+<script src="./js/index.js"></script>
 </html>
