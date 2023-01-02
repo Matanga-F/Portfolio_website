@@ -20,7 +20,7 @@
                     <!-- Button to close the overlay navigation -->
                     <div class="nav" id="navigation">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                         <a href="#">Skills</a>
                         <a href="#">Projects</a>
                         <a href="#">Contact</a>
@@ -28,7 +28,7 @@
                     <button class="open_menu" id="open_menu">open</button>
                 </div>
                 <div class="menu_nav">
-                    <span class = "dot"></span>
+                    <a href="#about"><span class = "dot">.</span></a>
                     <span class = "dot"></span>
                     <span class = "dot"></span>
                     <span class = "dot"></span>
@@ -40,15 +40,21 @@
                     <p>Clean efficient code and software development.</p>
                     
                 </div>
-                <div >
-                    <button class="resume" href="resume">Resume</button>
-                    <button class="resume" href="projects">View Project</button>
-                    <button class="resume" href="email">Send Email</button>
+                <div class="links">
+                    <div>
+                        <button class="resume" href="resume">Resume</button>
+                    </div>
+                    <div>
+                        <button class="resume" href="projects">View Project</button>
+                    </div>
+                    <div>
+                        <button class="resume" href="email">Send Email</button>
+                    </div>
                 </div>
                 <div id="resume"></div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="grid_view">
                 <div id="about_me">
                     <h5>About Me</h5>
@@ -105,16 +111,65 @@
                 </div>
             </div>
         </section>
-        <section class="project">
-            <div class="">
-                <div>project 1</div>
-                <div>project 2</div>
-                <div>project 3</div>
-                <div>project 4</div>
-                <div>project 5</div>
-                <div>project 6</div>
+        <section class="contact">
+            <div id="contact">
+                <div class="head">
+                    <h5>General Enquiries</h5>
+                </div>
+                <div class="form">
+                    <form>
+                        <label>Name</label><br />
+                        <input type="text" placeholder="fulufhelo" autofocus/><br />
+                        <label>Email</label><br />
+                        <input type="email" placeholder="matangafulufhelo@gmail.com"/><br />
+                        <label>Nature of Enquiry</label><br />
+                        <input type="text" placeholder="fulufhelo" autofocus/><br />
+                        <label>Messege</label><br />
+                        <textarea cols="30" rows="5" autocomplete="additional-name"></textarea><br />
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <!-- <div>
+                    <nav>
+                        <a href=""></a>
+                    </nav>
+                </div> -->
+                
             </div>
         </section>
+        <section class="footer">
+            <div>
+                <div class="first">
+                    <h5>Full Stack Developer</h5>
+                    <p>first solve the problem then write the code.</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </div>
+                <div class="copy">
+                    <p>&copy; All rights reserved. fulufhelo matanga</p>
+                </div>
+                <div>
+                    <div class="up">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="project_grid">
+                <div id="project">project 1</div>
+                <div id="project">project 2</div>
+                <div id="project">project 3</div>
+                <div id="project">project 4</div>
+                <div id="project">project 5</div>
+                <div id="project">project 6</div>
+            </div>
+        </section>
+        
 
     </main>
     

@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    width: 99%;
+    max-width: 98%;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -126,7 +126,7 @@ Dotted Menu Navigation.
     background-color: rgba(106, 108, 109, 0.6);
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 
 }
 
@@ -151,37 +151,47 @@ Dotted Menu Navigation.
 Design Resume button
 ============================================== */
 
+.links {
+    width: 90%;
+    margin:auto;
+    position: absolute;
+}
 
-.resume {
-    padding-top: 0;
+.links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 1em;
+}
+
+.links button {
     background-color: transparent;
     outline: none;
     cursor: pointer;
     color: rgb(211, 241, 248);
     letter-spacing: 0.2px;
-    border-radius: 12px;
-    margin-left:2.5em;
+    border-radius: 10px;
+    margin-left:2em;
     border: none;
-
-}
-
-.resume {
     padding: 0.5em;
     padding-left: 0.1em;
-    width: 22%;
+    width: 100%;
     border: 1px solid white;
     transition: 0.5s all;
+    text-transform: capitalize;
 }
-.resume:hover {
-    border:0.02em solid rgba(0, 215, 253, 0.5);
+
+
+.links button:hover {
+    border:0.04em solid rgba(0, 215, 253, 0.5);
     color: rgba(241, 250, 255, 0.6);
-    width: 21%;
     letter-spacing: 0.1px;
+    width: 97%;
+
 }
-.resume:active {
+.links button:active {
     border:0.02em solid rgb(0, 46, 253);
     color: rgb(202, 247, 247);
-    width: 21%;
     letter-spacing: 0.03em;
 }
 
@@ -256,7 +266,7 @@ SKilss Design
 
 .skills {
     height: 400px;
-    background-image:  url("/asserts/img/skill.jpg");
+    background-image:  url("/asserts/img/skill2.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -265,7 +275,7 @@ SKilss Design
 
 .skill {
     height: inherit;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .skill h2 {
@@ -320,9 +330,11 @@ SKilss Design
 
 
 .grid_skills button:hover {
-    border:0.02em solid rgba(0, 215, 253, 0.5);
+    border:0.04em solid rgba(0, 215, 253, 0.5);
     color: rgba(241, 250, 255, 0.6);
     letter-spacing: 0.1px;
+    width: 84%;
+
 }
 .grid_skills button:active {
     border:0.02em solid rgb(0, 46, 253);
@@ -336,6 +348,225 @@ SKilss Design
 PROJECT DESIGN
 ======================================================================== */
 
-.project {
-    height: 500px;
+.projects {
+    height: 600px;
+}
+
+#project {
+    max-width: 90%;
+    margin: auto;
+    height: 3em;
+    background-color: rgba(44, 44, 44, 0.5);
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+    border-radius:  10px;
+    text-align: center;
+
+}
+
+#project:first-child {
+    width: 65%;
+    margin-right: 2em;
+    margin-top: 2em;
+    
+}
+
+/* ==================================================
+CONTACT DESIGN
+===================================================== */
+
+.contact {
+    height: 600px;
+    background-color: rgba(14, 12, 12,.9);
+    color: white;
+    font-weight: 100;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 1px solid rgba(126, 125, 125, 0.2);
+    padding-bottom: 2em;
+}
+
+#contact {
+    padding-top: 1em;
+    padding-left: .5em;
+}
+.enquries{
+    width: 50%;
+    background-color: rgba(70, 67, 67, 0.9);
+    
+}
+
+.head h5 {
+    text-align: center;
+    z-index: 1;
+    padding-bottom: 0.5em;
+    font-weight: 100;
+    font-size: 30px;
+    top:-3em;
+    color: rgb(175, 213, 219);
+}
+
+
+.form {
+    padding-top: 1em;
+    width: 85%;
+    margin: auto;
+    border-top: 0.01em solid rgba(247, 254, 255, 0.5);
+    border-bottom: 1px solid rgba(247, 254, 255, 0.5);
+    text-align: center;
+    padding-bottom: 1em;
+}
+.form label {
+    margin-bottom: 1em;
+}
+.form  input, textarea {
+    width: 95%;
+    background-color: transparent;
+    outline: none;
+    color:rgb(175, 213, 219);
+    height: 3em;
+    font-size: 15px;
+    border: none;
+}
+
+
+.form  input, textarea {
+    margin-top: .4em; 
+    border: 0.02em solid white;
+    border-radius: 6px;
+    transition: 0.5s all;
+    padding-left: .5em;
+}
+.form input:hover, textarea:hover {
+    width: 97%;
+    cursor: pointer;
+    border:0.04em solid rgba(0, 215, 253, 0.5);
+    color: rgba(241, 250, 255, 0.6);
+}
+
+.form input:active, textarea:active {
+    width: 98%;
+    cursor: pointer;
+    border:0.04em solid rgba(0, 118, 253, 0.5);
+    color: rgba(241, 250, 255, 0.6);
+}
+.form textarea {
+    height: 2%;
+}
+
+.form button {
+    margin-top: 1em;
+    background-color: rgba(0, 118, 253, 0.5);
+    outline: none;
+    cursor: pointer;
+    color: rgb(211, 241, 248);
+    letter-spacing: 0.2px;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5em;
+    padding-left: 0.1em;
+    width: 80%;
+    border: 1px solid white;
+    transition: 0.5s all;
+    text-transform: capitalize;
+
+}
+
+.form button:hover {
+    border:0.04em solid rgba(249, 250, 250, 0.5);
+    background-color: rgb(0, 68, 255);
+    color: rgba(241, 250, 255, 0.6);
+    letter-spacing: 0.1px;
+    width: 81%;
+
+}
+.form button:active {
+    border:0.02em solid rgb(0, 46, 253);
+    background-color: rgb(6, 1, 48);
+    color: rgb(202, 247, 247);
+    letter-spacing: 0.03em;
+}
+
+/* =========================================================
+Footer Design
+============================================================= */
+
+.footer {
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;;
+}
+
+
+.footer .first {
+    padding-top: 1em;
+    text-align: center;
+}
+
+.footer .first h5 {
+    width: 55%;
+    margin: auto;
+    font-weight: 100;
+    font-size: 25px;
+    padding-left: 0.2px;
+    padding-right: 0.01em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer .first p {
+    text-transform: capitalize;
+    font-size: 16px;
+    padding-bottom: 0.5em;
+}
+
+.footer .icon{
+    width: 40%;
+    margin: auto;
+    border-top: 0.01em solid rgba(247, 254, 255, 0.5);
+    border-bottom: 1px solid rgba(247, 254, 255, 0.5);
+    padding-top: 0.5em;
+    margin-left: 6em;
+}
+
+.footer .icon .fa {
+    padding-left: 6.5em;
+}
+
+.footer .icon .fa {
+    position:static;
+    padding: .3em;
+    font-size: 25px;
+    border-radius: 9%;
+    color: rgb(130, 143, 145);;
+    cursor: pointer;
+    transition: 0.5s all;
+    z-index: 1;
+}
+.footer .icon .fa:hover {
+    color: rgba(93, 93, 94, 0.6);
+    font-size: 25px;
+    background: transparent;
+
+}
+
+.footer .icon .icon .fa:active {
+    color: rgb(202, 247, 247);
+}
+.footer .copy {
+    padding-top: 1em;
+    text-transform: capitalize;
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer button {
+    background-color: transparent;
+    color: white;
+    width: 25px
+
+}
+
+.footer .up .fa:hover {
+    color: white;
+    width: 20px
 }
